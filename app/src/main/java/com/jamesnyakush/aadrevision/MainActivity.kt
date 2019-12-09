@@ -16,20 +16,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         snack_click.setOnClickListener(this)
+        toast_click.setOnClickListener(this)
 
-        // this is a toast
-        Toast.makeText(this, "Welcome To AAD Certification Exams", Toast.LENGTH_LONG).show()
+
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
+            R.id.toast_click -> {
+                Toast.makeText(this,
+                    "Welcome To AAD Certification Exams",
+                    Toast.LENGTH_LONG).show()
+            }
             R.id.snack_click -> {
                 snackbar = Snackbar.make(
                     snack_layout,
                     "This is An AAD Snackbar Revision",
                     Snackbar.LENGTH_LONG
                 )
-
                 snackbar.show()
             }
         }
