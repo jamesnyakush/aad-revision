@@ -26,6 +26,13 @@
             android:text="@string/snackbar"
             />
 
+        <Button
+            android:id="@+id/notic_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            />
+
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
